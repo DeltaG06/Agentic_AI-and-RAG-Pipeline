@@ -26,7 +26,7 @@ def chat_with_deepseek(user_message, system_message=None, model="deepseek-chat",
         system_message (str, optional): System message to set context
         model (str): Model to use (deepseek-chat or deepseek-coder)
         temperature (float): Controls randomness (0-1)
-    
+     
     Returns:
         str: AI's response
     """
