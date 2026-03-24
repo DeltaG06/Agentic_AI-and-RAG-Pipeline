@@ -4,12 +4,15 @@ import requests
 client = Client(host="http://localhost:11434")
 
 
+
 def get_weather(city: str ):
     url =f"https://wttr.in/{city.lower()}?format=%C+%t"
     response = requests.get(url)
 
     if response.status_code == 200 :
         return f"The weather in {city} is {response.text}"
+    else :
+        return "something went wrong."
 
 
 def main():
